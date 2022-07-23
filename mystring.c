@@ -8,9 +8,11 @@
 *
 ========================================================*/
 
-void mystrcpy(char *__dest,const char *__src)
+char *mystrcpy(char *__dest,const char *__src)
 {
+	char *p=__dest;
     while(*__dest++=*__src++);
+	return p;
 }
 
 int mystrcmp(const char *__dest,const char *__src)
